@@ -7,6 +7,11 @@ import Signin from '../components/Signin';
 function LoginMain() {
   const [mode, setMode] = useState("");
 
+//   useEffect(()=>{
+//     setMode("LOGIN")
+//   },[])
+
+    // 처음에 로그인이 되어있는지 안되어있는지 확인
   useEffect(() => {
     fetch("http://localhost:3001/authcheck")
       .then((res) => res.json())
