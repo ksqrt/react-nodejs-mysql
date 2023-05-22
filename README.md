@@ -1,74 +1,17 @@
-<<<<<<< HEAD
-# react-nodejs-mysql
-=======
-# Getting Started with Create React App
+src: 웹 애플리케이션의 소스 코드를 포함하는 폴더입니다. 주요 기능 및 로직은 여기에 위치합니다.
+    components: 재사용 가능한 컴포넌트들을 포함하는 폴더입니다.
+    routes: 웹 애플리케이션의 라우팅과 관련된 파일을 포함하는 폴더입니다.
+    controllers: 라우팅 처리를 위한 컨트롤러 파일을 포함하는 폴더입니다.
+    <!-- models: 데이터베이스 모델과 관련된 파일을 포함하는 폴더입니다. -->
+    <!-- utils: 유틸리티 함수 또는 헬퍼 함수와 같은 보조 파일을 포함하는 폴더입니다.
+    views: 템플릿 엔진을 사용하는 경우, 템플릿 파일들을 포함하는 폴더입니다. -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+public: 정적 파일(이미지, CSS, JavaScript 등)을 포함하는 폴더입니다. 클라이언트 측에서 직접 접근할 수 있는 파일들을 이 폴더에 저장합니다.
 
-## Available Scripts
+config: 설정 파일들을 포함하는 폴더입니다. 데이터베이스 연결, 환경 변수 등을 구성할 수 있습니다.
 
-In the project directory, you can run:
+db: 데이터베이스 관련 파일들을 포함하는 폴더입니다. 데이터베이스 마이그레이션 파일이나 초기 데이터 파일 등을 이 폴더에 저장할 수 있습니다.
 
-### `npm start`
+test: 단위 테스트나 통합 테스트와 같은 테스트 관련 파일들을 포함하는 폴더입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 0f2cd0e47b0c0bb6a66df5372ee3fe98f724f3fe
+scripts: 빌드 스크립트나 배포 스크립트와 같은 유틸리티 스크립트 파일들을 포함하는 폴더입니다.

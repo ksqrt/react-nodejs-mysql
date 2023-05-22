@@ -4,8 +4,9 @@ const path = require('path');
 const app = express()
 const port = 3001
 
-const db = require('./lib/db');
-const sessionOption = require('./lib/sessionOption');
+
+const db = require('./db/db');
+const sessionOption = require('./db/sessionOption');
 const bodyParser = require("body-parser");
 const bcrypt = require('bcrypt');
 
