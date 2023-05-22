@@ -11,14 +11,11 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/UserList" element={<UserList />} />
+        <Route path="/" element={<LoginMain />} />
         {/* Add other routes here */}
       </Routes>
     </Router>
 
-    <div>
-      <LoginMain></LoginMain>
-      
-    </div>
     </>
   );
 };

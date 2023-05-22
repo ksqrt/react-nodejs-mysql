@@ -4,7 +4,7 @@ const path = require('path');
 const app = express()
 const port = 3001
 
-
+const cors = require('cors');
 const db = require('./db/db');
 const sessionOption = require('./db/sessionOption');
 const bodyParser = require("body-parser");
@@ -13,6 +13,8 @@ const bcrypt = require('bcrypt');
 app.use(express.static(path.join(__dirname, '/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
+
 
 var MySQLStore = require('express-mysql-session')(session);
 var sessionStore = new MySQLStore(sessionOption);
