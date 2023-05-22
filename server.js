@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
     req.sendFile(path.join(__dirname, '/build/index.html'));
 })
 // 리액트 라우팅 추가후 여기에도 추가해주세요~
-app.get('/UserList', (req, res) => {    
+app.get('/userlist', (req, res) => {    
     res.sendFile(path.join(__dirname, '/build/index.html'));
 })
 

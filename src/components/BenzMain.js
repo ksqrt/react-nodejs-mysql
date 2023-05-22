@@ -11,12 +11,12 @@ import ImageHeadline from '../components/BenzMain/ImageHeadline';
 import Gallery from '../components/BenzMain/Gallery';
 import Footer from '../components/BenzMain/Footer';
 
-import { ImageHeadlineData } from './data/ImageHeadlineData';
-import { HeadlineData } from './data/HeadlineData';
-import { Carrousel1 } from './data/Carrousel1';
-import { Carrousel2 } from './data/Carrousel2';
-import { Carrousel3 } from './data/Carrousel3';
-import { Carrousel4 } from './data/Carrousel4';
+import { ImageHeadlineData } from './BenzMaindata/ImageHeadlineData';
+import { HeadlineData } from './BenzMaindata/HeadlineData';
+import { Carrousel1 } from './BenzMaindata/Carrousel1';
+import { Carrousel2 } from './BenzMaindata/Carrousel2';
+import { Carrousel3 } from './BenzMaindata/Carrousel3';
+import { Carrousel4 } from './BenzMaindata/Carrousel4';
 
 function BenzMain() {
 

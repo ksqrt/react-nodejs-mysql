@@ -6,7 +6,7 @@ import GalleryCard from './GalleryCard';
 
 import './Gallery.css';
 
-import { GalleryData } from '../data/GalleryData.js'
+import { GalleryData } from '../BenzMaindata/GalleryData.js'
 
 const Gallery = () => {
 

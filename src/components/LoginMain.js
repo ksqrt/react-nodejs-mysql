@@ -1,8 +1,8 @@
 // import '../App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Login from '../components/Login';
-import Signin from '../components/Signin';
+import Login from '../components/Login/Login';
+import Signin from '../components/Login/Signin';
 
 function LoginMain() {
   const [mode, setMode] = useState("");
