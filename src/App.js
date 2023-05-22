@@ -11,9 +11,14 @@ const App = () => {
     <>
     <Router>
       <Routes>
-        <Route path="/BenzMain" element={<BenzMain />} />
-        <Route path="/UserList" element={<UserList />} />
-        <Route path="/" element={<LoginMain />} />
+        {/* 메인페이지 */}
+        <Route path="/" element={<BenzMain />} />
+
+        {/* 로그인페이지 */}
+        <Route path="/login" element={<LoginMain />} />
+        
+        {/* 유저리스트 출력 */}
+        <Route path="/userlist" element={<UserList />} />
         {/* Add other routes here */}
         
       </Routes>
