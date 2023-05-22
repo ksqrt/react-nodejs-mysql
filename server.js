@@ -26,9 +26,16 @@ app.use(session({
 	saveUninitialized: false
 }))
 
+// 정적 파일 제공
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.get('/', (req, res) => {    
     req.sendFile(path.join(__dirname, '/build/index.html'));
 })
+app.get('/UserList', (req, res) => {    
+    res.sendFile(path.join(__dirname, '/build/index.html'));
+})
+
 
 app.get('/authcheck', (req, res) => {      
     const sendData = { isLogin: "" };
