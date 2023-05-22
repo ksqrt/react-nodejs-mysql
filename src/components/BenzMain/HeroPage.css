@@ -1,0 +1,128 @@
+.HeroPage{
+    height: 77vh;
+    width: 100%;
+    
+}
+
+
+.HeroPage__overlay{
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.HeroPage__overlay__upperText{
+    width: 25%;
+    
+}
+
+.HeroPage__overlay__upperText__p{
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.HeroPage__overlay__lowerText{
+    display: flex;
+}
+
+.HeroPage__overlay__lowerText__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+.HeroPage__overlay__lowerText__left p,
+.HeroPage__overlay__lowerText__right p{
+    letter-spacing: 1px;
+}
+
+
+
+.HeroPage h1,
+.HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+}
+
+.HeroPage h1{
+    font-size: 70px;
+}
+.HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
+    font-size: 50px;
+}
+
+/* oryginally 1280px */
+@media (max-width: 1350px){
+    .HeroPage h1,
+    .HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
+        font-size: 40px;
+    }
+
+
+    .HeroPage__overlay__lowerText__left{
+        padding-right: 2rem;
+    }
+
+}
+
+
+@media (max-width: 1230px){
+
+    .HeroPage__overlay__upperText{
+        width: 30%;
+
+    }
+
+}
+
+@media (max-width: 1045px){
+
+    .HeroPage__overlay__upperText{
+        width: 50%;
+
+    }
+
+    .HeroPage__overlay{
+        padding-left: 1rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+
+    .HeroPage__overlay{
+        padding-left: 0;
+    }
+
+    .HeroPage__overlay__lowerText{
+        display: none;
+    }
+
+    .HeroPage__overlay__upperText{
+        width: 60%;
+    }
+
+    .HeroPage h1{
+        font-size: 60px;
+    }
+    
+}
+
+@media (max-width: 450px){
+
+    .HeroPage__overlay__upperText{
+        width: 80%;
+    }
+
+}

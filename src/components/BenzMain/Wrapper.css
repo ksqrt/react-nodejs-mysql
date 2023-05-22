@@ -1,0 +1,18 @@
+.Wrapper{
+
+    background-image: url('../assets/images/1nice-3400x1480.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media (max-width: 768px){
+
+    .Wrapper{
+        height: 88vh;
+        background-size: fill;
+        background-image: url('../assets/images/wrapper_small.jpg');
+    }
+    
+}

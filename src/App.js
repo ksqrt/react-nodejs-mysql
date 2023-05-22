@@ -3,6 +3,7 @@ import React from 'react';
 import LoginMain from './components/LoginMain';
 import UserList from './components/UserList';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import BenzMain from './components/BenzMain';
 
 
 const App = () => {
@@ -10,9 +11,11 @@ const App = () => {
     <>
     <Router>
       <Routes>
+        <Route path="/BenzMain" element={<BenzMain />} />
         <Route path="/UserList" element={<UserList />} />
         <Route path="/" element={<LoginMain />} />
         {/* Add other routes here */}
+        
       </Routes>
     </Router>
 
