@@ -46,10 +46,10 @@ app.get('/login/loginMain', (req, res) => {
 
 
 // 로그인 라우터 가지고오기
-app.use('/login', loginRouter);
+app.use('/login',require('./router/login'));
 
 // 유저 리스트 라우터 가지고오기
-app.use('/', userListRouter);
+app.use('/userList',  require('./router/userList'));
 
 
 

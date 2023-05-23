@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/login/loginMain" element={<LoginMain />} />
         
         {/* 유저리스트 출력 */}
-        <Route path="/userlist" element={<UserList />} />
+        <Route path="/userList/userList" element={<UserList />} />
         {/* Add other routes here */}
         
       </Routes>
