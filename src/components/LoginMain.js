@@ -13,7 +13,7 @@ function LoginMain() {
 
     // 처음에 로그인이 되어있는지 안되어있는지 확인
   useEffect(() => {
-    fetch("http://localhost:3000/authcheck")
+    fetch("http://localhost:3000/login/authcheck")
     // fetch("/authcheck")
       .then((res) => res.json())
       .then((json) => {

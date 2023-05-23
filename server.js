@@ -26,6 +26,8 @@ app.use(session({
   saveUninitialized: false
 }));
 
+
+
 // 정적 파일 제공
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -36,19 +38,18 @@ app.get('/', (req, res) => {
 app.get('/userlist', (req, res) => {    
   res.sendFile(path.join(__dirname, '/build/index.html'));
 });
-app.get('/login', (req, res) => {    
+app.get('/login/loginMain', (req, res) => {    
   res.sendFile(path.join(__dirname, '/build/index.html'));
 });
 
 
 
 
-// 로그인 라우터
-app.use('/', loginRouter);
+// 로그인 라우터 가지고오기
+app.use('/login', loginRouter);
 
-// 유저 라우터
+// 유저 리스트 라우터 가지고오기
 app.use('/', userListRouter);
-
 
 
 

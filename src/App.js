@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<BenzMain />} />
 
         {/* 로그인페이지 */}
-        <Route path="/login" element={<LoginMain />} />
+        <Route path="/login/loginMain" element={<LoginMain />} />
         
         {/* 유저리스트 출력 */}
         <Route path="/userlist" element={<UserList />} />

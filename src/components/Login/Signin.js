@@ -26,7 +26,7 @@ function Signin(props) {
             userPassword: password,
             userPassword2: password2,
           };
-          fetch("http://localhost:3000/signin", {
+          fetch("http://localhost:3000/login/signin", {
             method: "post",
             headers: {
               "content-type": "application/json",
