@@ -9,7 +9,7 @@ const UserList = () => {
 
   const fetchUserList = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/users'); // 서버에서 유저 목록 데이터를 가져오는 API 엔드포인트로 요청합니다.
+      const response = await fetch('http://localhost:3000/userList/api/users'); // 서버에서 유저 목록 데이터를 가져오는 API 엔드포인트로 요청합니다.
       // const response = await fetch('/api/users'); // 서버에서 유저 목록 데이터를 가져오는 API 엔드포인트로 요청합니다.
       const userList = await response.json();
       console.log(userList)

@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.get('/', (req, res) => {    
   req.sendFile(path.join(__dirname, '/build/index.html'));
 });
-app.get('/userlist', (req, res) => {    
+app.get('/userList/userList', (req, res) => {    
   res.sendFile(path.join(__dirname, '/build/index.html'));
 });
 app.get('/login/loginMain', (req, res) => {    
