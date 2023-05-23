@@ -2,7 +2,7 @@ const express = require('express')
 const session = require('express-session')
 const path = require('path');
 const app = express()
-const port = 3001
+const port = 3000
 
 const cors = require('cors');
 const db = require('./db/db');
@@ -29,11 +29,14 @@ app.use(session({
 // 정적 파일 제공
 app.use(express.static(path.join(__dirname, 'build')));
 
+// 리액트 라우팅 추가후 여기에도 추가해주세요~
 app.get('/', (req, res) => {    
     req.sendFile(path.join(__dirname, '/build/index.html'));
 })
-// 리액트 라우팅 추가후 여기에도 추가해주세요~
 app.get('/userlist', (req, res) => {    
+    res.sendFile(path.join(__dirname, '/build/index.html'));
+})
+app.get('/login', (req, res) => {    
     res.sendFile(path.join(__dirname, '/build/index.html'));
 })
 
