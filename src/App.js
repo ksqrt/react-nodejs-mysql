@@ -12,6 +12,7 @@ const App = () => {
     <Router>
       <Routes>
         {/* 메인페이지 */}
+        {/* patch 에 있는 주소에 가면 element 에 해당하는 컴포넌트가 뜹니다. */}
         <Route path="/" element={<BenzMain />} />
 
         {/* 로그인페이지 */}
