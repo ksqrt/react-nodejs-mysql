@@ -5,11 +5,9 @@ const app = express();
 const port = 3000;
 
 const cors = require('cors');
-const db = require('./db/db');
 const sessionOption = require('./db/sessionOption');
 const bodyParser = require("body-parser");
-const loginRouter = require('./router/login');
-const userListRouter = require('./router/userList');
+
 
 app.use(express.static(path.join(__dirname, '/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // 리액트 라우팅 추가후 여기에도 추가해주세요~
 app.get('/', (req, res) => {    
-  req.sendFile(path.join(__dirname, '/build/index.html'));
+  res.sendFile(path.join(__dirname, '/build/index.html'));
 });
 app.get('/userList/userList', (req, res) => {    
   res.sendFile(path.join(__dirname, '/build/index.html'));
